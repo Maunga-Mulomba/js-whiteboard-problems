@@ -2,7 +2,29 @@ const { assert } = require("chai");
 const countScores = require("../problems/15-count-scores");
 
 describe("countScores()", () => {
-  it("should return an object that has key-value pairs where each name is a key and the value is their total score", () => {});
+  it("should return an object that has key-value pairs where each name is a key and the value is their total score", () => {
+    // Example 1:
+    const ppl = [
+      { name: "Anthony", score: 10 },
+      { name: "Fred", score: 10 },
+      { name: "Anthony", score: -8 },
+      { name: "Winnie", score: 12 },
+    ];
+    assert.deepEqual(countScores(ppl),{ Anthony: 2, Fred: 10, Winnie: 12 })
+
+    // Example 2
+    const peeps = [
+      { name: "Anthony", score: 2 },
+      { name: "Winnie", score: 2 },
+      { name: "Fred", score: 2 },
+      { name: "Winnie", score: 2 },
+      { name: "Fred", score: 2 },
+      { name: "Anthony", score: 2 },
+      { name: "Winnie", score: 2 },
+    ];
+
+    assert.deepEqual(countScores(peeps),{ Anthony: 4, Fred: 4, Winnie: 6 })
+  });
 });
 
 /*

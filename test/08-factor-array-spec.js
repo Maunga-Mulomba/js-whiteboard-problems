@@ -8,3 +8,5 @@ describe("factorArray()", () => {
     assert.deepStrictEqual(factorArray([10, 15, 20, 25], 5), []);
   });
 });
+
+

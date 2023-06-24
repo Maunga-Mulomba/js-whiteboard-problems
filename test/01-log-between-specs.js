@@ -8,3 +8,4 @@ describe("logBetween()", () => {
     assert.deepStrictEqual(logBetween(4, 6), [4, 5, 6]);
   });
 });
+const {assert} = require('chai');
