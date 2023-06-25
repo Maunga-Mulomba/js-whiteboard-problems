@@ -1,11 +1,11 @@
 let logBetween = (lowNum, highNum) => {
-//   let result = [];
+  let result = [];
 
-//   for (let i = lowNum; i <= highNum; i++) {
-//     result.push(i);
-//   }
+  for (let i = lowNum; i <= highNum; i++) {
+    result.push(i);
+  }
 
-//   return result;
+  return result;
 };
 
 try {

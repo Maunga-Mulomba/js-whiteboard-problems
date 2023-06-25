@@ -8,3 +8,6 @@ describe("threeIncreasing()", () => {
     assert.equal(threeIncreasing([7, 2, 4, 5, 2, 1, 6]), false);
   });
 });
+
+// 11 -- arr[i]
+// 12 -- arr[i + 1]

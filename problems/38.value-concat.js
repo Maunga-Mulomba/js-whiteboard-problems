@@ -1,4 +1,12 @@
-function valueConcat(array, obj) {}
+function valueConcat(array, obj) {
+  return array.map((ele)=>{
+    if(ele in obj) {
+      return ele + obj[ele]
+    } else {
+      return ele
+    }
+  })
+}
 
 try {
   module.exports = valueConcat;

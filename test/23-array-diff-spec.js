@@ -1,5 +1,5 @@
 const { assert } = require("chai");
-const arrayDiff = require("../problems/22-two-diff");
+const arrayDiff = require('../problems/23-array-diff')
 
 describe("arrayDiff()", () => {
   it("return a new array, containing the elements of arr1 that are not also in arr2", () => {

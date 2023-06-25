@@ -1,7 +1,9 @@
-const { expect } = require("chai");
+const chai = require("chai");
 const spies = require("chai-spies");
-const myIndexOf = require("../problems/07-my-index-of");
+const expect = chai.expect;
 chai.use(spies);
+
+const myIndexOf = require("../problems/07-my-index-of");
 
 describe("myIndexOf()", () => {
   it("should return the index value of the target if it is present in the array, else -1", () => {
